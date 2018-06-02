@@ -6,12 +6,12 @@ if (module.parent) {
   module.exports = WizzyServer
 } else {
   new WizzyServer({
-    plugins: [
+    plugins : [
       {
-        name: 'Hello World',
-        module: 'hello-world',
-        kinds: ['hello']
-      }
-    ]
+        name : 'Hello World',
+        module : 'hello-world',
+        kinds : ['hello'],
+      },
+    ],
   }).start()
 }
